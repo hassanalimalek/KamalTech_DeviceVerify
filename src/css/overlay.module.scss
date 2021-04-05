@@ -1,0 +1,111 @@
+.modal {
+  margin: auto;
+  position: absolute;
+  top: 50px;
+  left: 150px;
+  bottom: 50px;
+  right: 150px;
+  border-radius: 10px;
+  background-color: #fff;
+  color: #000;
+  z-index: 5;
+  overflow-y: scroll;
+}
+.modalWrapper {
+  padding: 2rem;
+  text-align: center;
+}
+.modalTitle {
+  font-size: 1.2rem;
+}
+.modalCloseBtn {
+  position: absolute;
+  right: 25px;
+  top: 10px;
+  font-size: 1.8rem;
+  transition: all 0.6s;
+  color: #111;
+}
+.modalCloseBtn:hover {
+  color: #777;
+  cursor: pointer;
+}
+.overlayForm {
+  text-align: left;
+}
+.labelsWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.skuTxt {
+  font-weight: 300;
+}
+.formInputWrapper {
+  display: flex;
+}
+
+// input:focus + .iconWrapper {
+//   visibility: visible;
+// }
+.iconWrapper {
+  margin-left: 1rem;
+  margin-top: 0.2rem;
+  font-size: 1.2rem;
+  align-self: flex-center;
+}
+.validIcon {
+  color: #57b655;
+}
+.inValidIcon {
+  color: #e63946;
+}
+.genBarCode {
+  margin: 1rem 0.5rem;
+  cursor: pointer;
+}
+.genBarCodeTxt {
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+.formSubmitWrapper {
+  background-color: #fff;
+  display: grid;
+  position: sticky;
+  bottom: 0;
+  padding: 0.2rem;
+  place-items: center;
+  //   margin: 1.5rem;
+}
+.formSubmitBtn {
+  border: none;
+  color: #fff;
+  font-size: 1.2rem;
+  background-color: #b1d06f;
+  padding: 0.5rem 6rem;
+  border-radius: 8px;
+  transition: all 0.6s;
+}
+.formSubmitBtn:hover {
+  cursor: pointer;
+  background-color: #8fa75b;
+}
+
+@media (max-width: 768px) {
+  .modal {
+    left: 75px;
+    right: 75px;
+  }
+  .modalWrapper {
+    padding: 2.5rem 1rem;
+    text-align: center;
+  }
+  .modalCloseBtn {
+    right: 10px;
+    top: 5px;
+    font-size: 1.5rem;
+  }
+  .formSubmitBtn {
+    padding: 0.5rem 3rem;
+  }
+}

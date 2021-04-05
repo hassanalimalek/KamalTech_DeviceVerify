@@ -1,0 +1,9 @@
+/* BootStrap Override */
+
+.form-control {
+  background-color: #fbfbfb !important;
+  border: none !important;
+  border-radius: 8px !important;
+}
+
+/* Form */

@@ -1,0 +1,44 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Nunito:wght@300;600&display=swap');
+
+/* Globals */
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+.appWrapper {
+  margin: 0.5rem;
+}
+
+/* Radio Button */
+
+input[type='radio'] {
+  display: none;
+}
+input[type='radio'] + label {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 5px;
+  cursor: pointer;
+}
+input[type='radio'] + label:before {
+  content: '';
+  background: #fff;
+  border: 2px solid #ddd;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0.6rem;
+  width: 20px;
+  height: 20px;
+  padding: 2px;
+  margin-right: 10px;
+  border-radius: 50%;
+  text-align: center;
+}
+input[type='radio']:checked + label:before {
+  content: '\f00c';
+  font-family: 'FontAwesome';
+  color: #111;
+}
